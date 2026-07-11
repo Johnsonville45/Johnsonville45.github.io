@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Home - Real Estate Platform</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); }
+        .card-shadow { box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900">Dream Home</h1>
+            <div class="flex gap-8">
+                <a href="#home" class="hover:text-gray-600 transition">Home</a>
+                <a href="#properties" class="hover:text-gray-600 transition">Properties</a>
+                <a href="#guide" class="hover:text-gray-600 transition">Guide</a>
+                <a href="#services" class="hover:text-gray-600 transition">Services</a>
+                <button class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient py-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-sm text-gray-600 mb-2">WELCOME TO COMFORT</p>
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">Find Your Dream Home With Ease.</h1>
+                <p class="text-gray-600 mb-8 text-lg">Discover real listings, securely without issues, and contact trusted agents to help you throughout your journey.</p>
+                <div class="flex gap-4">
+                    <button class="bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition">Start Now</button>
+                    <button class="border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Learn More</button>
+                </div>
+            </div>
+            <div class="bg-gray-300 h-96 rounded-2xl flex items-center justify-center">
+                <div class="text-6xl text-gray-400">📷</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gray-400 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">👤</div>
+                    <h3 class="font-semibold text-lg mb-2">Trusted Agents</h3>
+                    <p class="text-gray-600 text-sm">Work with experienced and certified agents</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gray-400 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">🔐</div>
+                    <h3 class="font-semibold text-lg mb-2">Privacy Secured</h3>
+                    <p class="text-gray-600 text-sm">Your data is protected with strong security</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gray-400 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">✓</div>
+                    <h3 class="font-semibold text-lg mb-2">Inspection Matching</h3>
+                    <p class="text-gray-600 text-sm">Find homes that match your requirements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900">Apartments</h2>
+                <div class="flex gap-2">
+                    <button class="px-4 py-2 rounded-full text-sm bg-gray-100 hover:bg-gray-200 transition">Office</button>
+                    <button class="px-4 py-2 rounded-full text-sm bg-gray-100 hover:bg-gray-200 transition">Apartment</button>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Property 1 -->
+                <div class="card-shadow hover-lift rounded-2xl overflow-hidden bg-white">
+                    <div class="bg-gray-300 h-48 flex items-center justify-center">
+                        <div class="text-4xl text-gray-400">🏠</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Luxurious Royal Mansion</h3>
+                        <p class="text-gray-600 text-sm mb-4">3 Bedroom • 2 Bathroom • Kitchen</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">$ 133,500</span>
+                            <button class="bg-black text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="card-shadow hover-lift rounded-2xl overflow-hidden bg-white">
+                    <div class="bg-gray-300 h-48 flex items-center justify-center">
+                        <div class="text-4xl text-gray-400">🏢</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Grand Residence</h3>
+                        <p class="text-gray-600 text-sm mb-4">4 Bedroom • 3 Bathroom • Balcony</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">$ 200,000</span>
+                            <button class="bg-black text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="card-shadow hover-lift rounded-2xl overflow-hidden bg-white">
+                    <div class="bg-gray-300 h-48 flex items-center justify-center">
+                        <div class="text-4xl text-gray-400">🏡</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Spacious Haven</h3>
+                        <p class="text-gray-600 text-sm mb-4">2 Bedroom • 1 Bathroom • Garden</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">$ 175,500</span>
+                            <button class="bg-black text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-2">
+                <button class="w-3 h-3 bg-black rounded-full"></button>
+                <button class="w-3 h-3 bg-gray-300 rounded-full hover:bg-gray-400 transition"></button>
+                <button class="w-3 h-3 bg-gray-300 rounded-full hover:bg-gray-400 transition"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Guide -->
+    <section id="guide" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-12">User guide for first timer</h2>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-black pl-6">
+                        <h3 class="font-bold text-lg mb-2">Step 1</h3>
+                        <p class="text-gray-600">Search or use Filter To Find Properties That Match Your Needs.</p>
+                    </div>
+                    <div class="border-l-4 border-gray-300 pl-6">
+                        <h3 class="font-bold text-lg mb-2">Step 2</h3>
+                        <p class="text-gray-600">Schedule a visit with the agent and verify the property details.</p>
+                    </div>
+                    <div class="border-l-4 border-gray-300 pl-6">
+                        <h3 class="font-bold text-lg mb-2">Step 3</h3>
+                        <p class="text-gray-600">Review inspection reports and get professional recommendations.</p>
+                    </div>
+                    <div class="border-l-4 border-gray-300 pl-6">
+                        <h3 class="font-bold text-lg mb-2">Step 4</h3>
+                        <p class="text-gray-600">Complete paperwork and secure your new home with confidence.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-gray-300 h-40 rounded-2xl flex items-center justify-center">
+                    <div class="text-5xl text-gray-400">📷</div>
+                </div>
+                <div class="bg-gray-300 h-40 rounded-2xl flex items-center justify-center">
+                    <div class="text-5xl text-gray-400">📷</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 text-center mb-16">Satisfied Clients Speaks</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-gray-300 h-64 rounded-2xl flex items-center justify-center">
+                    <div class="text-6xl text-gray-400">👤</div>
+                </div>
+                <div>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">"Working with Dream Home was an incredible experience. The team guided me through every step of finding my perfect property. Their professionalism and dedication made the entire process smooth and stress-free. I couldn't have asked for better service!"</p>
+                    <div>
+                        <p class="font-bold text-lg">Rashid Abdullahi</p>
+                        <p class="text-gray-600 text-sm">Verified Customer</p>
+                    </div>
+                    <button class="mt-6 bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition">See More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <p class="text-6xl font-bold text-gray-900 mb-2">10+ Million</p>
+                    <p class="text-gray-600">Successful property transactions completed with our trusted platform and agents</p>
+                </div>
+                <div>
+                    <p class="text-6xl font-bold text-gray-900 mb-2">8x More</p>
+                    <p class="text-gray-600">Our customers find their dream homes faster than industry average timelines</p>
+                </div>
+                <div>
+                    <p class="text-6xl font-bold text-gray-900 mb-2">1+ Million</p>
+                    <p class="text-gray-600">Satisfied customers who have successfully purchased their properties through us</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900">Blog Section</h2>
+                <button class="text-black font-semibold hover:text-gray-600 transition">See All →</button>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- Blog 1 -->
+                <div class="card-shadow hover-lift rounded-xl overflow-hidden bg-white">
+                    <div class="bg-gray-300 h-40 flex items-center justify-center">
+                        <div class="text-4xl text-gray-400">📰</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold mb-2">Real Estate Tips</h3>
+                        <p class="text-gray-600 text-sm mb-3">Essential strategies for new property buyers</p>
+                        <p class="text-sm font-semibold">$ 150,000</p>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="card-shadow hover-lift rounded-xl overflow-hidden bg-white">
+                    <div class="bg-gray-300 h-40 flex items-center justify-center">
+                        <div class="text-4xl text-gray-400">📰</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold mb-2">Market Trends</h3>
+                        <p class="text-gray-600 text-sm mb-3">Current real estate market analysis</p>
+                        <p class="text-sm font-semibold">$ 200,000</p>
+                    </div>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="card-shadow hover-lift rounded-xl overflow-hidden bg-white">
+                    <div class="bg-gray-300 h-40 flex items-center justify-center">
+                        <div class="text-4xl text-gray-400">📰</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold mb-2">Investment Guide</h3>
+                        <p class="text-gray-600 text-sm mb-3">How to invest wisely in properties</p>
+                        <p class="text-sm font-semibold">$ 165,500</p>
+                    </div>
+                </div>
+
+                <!-- Blog 4 -->
+                <div class="card-shadow hover-lift rounded-xl overflow-hidden bg-white">
+                    <div class="bg-gray-300 h-40 flex items-center justify-center">
+                        <div class="text-4xl text-gray-400">📰</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold mb-2">Financing Options</h3>
+                        <p class="text-gray-600 text-sm mb-3">Explore mortgage and loan solutions</p>
+                        <p class="text-sm font-semibold">$ 175,500</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 px-6 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Services</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-black p-8 rounded-2xl hover-lift">
+                    <div class="text-4xl font-bold mb-4">01</div>
+                    <h3 class="text-2xl font-bold mb-4">Furniture Design</h3>
+                    <p class="text-gray-300 mb-6">The design of elegant home furnishings and decorations ensures your space is both comfortable and stylish, meeting your unique aesthetic preferences.</p>
+                    <a href="#" class="text-white font-semibold hover:text-gray-300 transition">Learn More →</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-800 p-8 rounded-2xl hover-lift">
+                    <div class="text-4xl font-bold mb-4">02</div>
+                    <h3 class="text-2xl font-bold mb-4">Interior Details</h3>
+                    <p class="text-gray-300 mb-6">Encompassing interior detailing services, we focus on optimizing every aspect of your home's interior design to create a cohesive and inviting living space.</p>
+                    <a href="#" class="text-white font-semibold hover:text-gray-300 transition">Learn More →</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-800 p-8 rounded-2xl hover-lift">
+                    <div class="text-4xl font-bold mb-4">03</div>
+                    <h3 class="text-2xl font-bold mb-4">Home Revamping</h3>
+                    <p class="text-gray-300 mb-6">Transform your existing property with our comprehensive home revamping services, breathing new life into your space with modern updates and improvements.</p>
+                    <a href="#" class="text-white font-semibold hover:text-gray-300 transition">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 bg-gradient-to-r from-gray-900 to-black text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Find Your Dream Home?</h2>
+            <p class="text-lg text-gray-300 mb-8">Join thousands of satisfied customers who have found their perfect properties with us</p>
+            <button class="bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition">Get Started Today</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-white font-bold mb-4">Dream Home</h3>
+                    <p class="text-sm">Your trusted partner in finding the perfect property</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Privacy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms</a></li>
+                        <li><a href="#" class="hover:text-white transition">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; 2024 Dream Home. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
