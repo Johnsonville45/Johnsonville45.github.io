@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Pahe Plus",
+  "version": "0.2.0",
+  "description": "Pahe Plus browser extension project scaffold",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Pahe Plus",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "common.js",
+        "content/main.js"
+      ],
+      "css": [
+        "content/main.css"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}

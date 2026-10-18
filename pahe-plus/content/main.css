@@ -1,0 +1,19 @@
+:root {
+  --pahe-plus-accent: #4a90e2;
+  --pahe-plus-background: #111827;
+  --pahe-plus-text: #f3f4f6;
+}
+
+.pahe-plus-root {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 2147483647;
+  background: var(--pahe-plus-background);
+  color: var(--pahe-plus-text);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-family: sans-serif;
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}

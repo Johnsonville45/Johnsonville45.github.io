@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Pahe Plus",
+  "version": "0.2.0",
+  "description": "Pahe Plus Chromium-specific build configuration",
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pahe-plus@example.invalid"
+    }
+  }
+}
