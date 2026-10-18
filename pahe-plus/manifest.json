@@ -25,7 +25,8 @@
       ],
       "js": [
         "common.js",
-        "content/main.js"
+        "content/main.js",
+        "content/player.js"
       ],
       "css": [
         "content/main.css"
